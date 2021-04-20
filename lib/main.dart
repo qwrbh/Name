@@ -23,14 +23,11 @@ class MyApp extends StatelessWidget {
 class Picture extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Container(
-        child: Center(
-          child: Image(
-            image: NetworkImage(
-                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-          ),
-        ),
+    return Center(
+      child: Image(
+        width: 300,
+        image: NetworkImage(
+            'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
       ),
     );
   }
